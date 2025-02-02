@@ -1,0 +1,242 @@
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  color: var(--textColor);
+}
+
+.text-capitalize{
+  text-transform: capitalize;
+}
+
+#container {
+  gap: 2rem;
+}
+
+#store-info {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--primary);
+  gap: 1rem;
+}
+
+.about-us {
+  gap: 1rem;
+}
+
+#company-info {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.aboutus-img {
+  width: 45%;
+  object-fit: cover;
+}
+
+#our-team-info {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--primary);
+  gap: 1rem;
+}
+
+#team-info {
+  display: flex;
+  gap: 1rem;
+}
+
+#together-img {
+  border-radius: 1rem;
+  mix-blend-mode: multiply;
+}
+
+#member-wrapper {
+  gap: 2rem;
+}
+
+#member-container {
+  gap: 2rem;
+}
+
+.member-info {
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--textColor);
+  font-weight: bold;
+  background-color: var(--primary);
+}
+
+#member-card-container {
+  display: flex;
+  min-height: 20rem;
+  height: 25rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.member-card {
+  flex: 10rem 0 auto;
+  position: relative;
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 20%;
+  cursor: pointer;
+  transition: ease 0.3s;
+  overflow: hidden;
+  filter: brightness(0.75);
+  background-position: center;
+  background-size: cover;
+}
+
+.about-background-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-card:hover {
+  width: 100%;
+  filter: brightness(1);
+}
+
+
+.social-media-icons {
+  gap: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: -5rem;
+  transition: ease 0.3s;
+  color: white;
+  align-items: flex-end;
+}
+
+.media-icon-container:nth-child(1){
+  background-color: #1877F2;
+}
+.media-icon-container:nth-child(2){
+  background-color: white;
+  color: black;
+}
+.media-icon-container:nth-child(3){
+  background-color: #E1306C;
+}
+.media-icon-container:nth-child(4){
+  background-color: black;
+}
+
+.media-icon-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: .5rem;
+  padding: 0.5rem 0.5rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  width: 2.25rem;
+  overflow: hidden;
+}
+
+.media-icon-container:hover {
+  transition: ease 0.3s;
+  flex-direction: row;
+  width: 100%;
+}
+
+.member-card:hover .social-media-icons {
+  right: 1rem;
+}
+
+.member-information {
+  position: absolute;
+  gap: 0.5rem;
+  color: var(--backgroundColor);
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+}
+
+.member-info-container{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+}
+
+.member-info-container{
+  color:var(--backgroundColor);
+  padding: 2rem;
+  overflow-y: scroll;
+  gap: 2rem;
+}
+
+.member-specs-container{
+  display: flex;
+  justify-content: space-between;
+  border-radius: .5rem;
+}
+
+.memebr-education{
+  gap: 1rem;
+}
+
+.display{
+  display: flex;
+}
+
+
+@media(max-width:480px){
+
+  #team-info{
+    flex-direction: column;
+  }
+
+  #member-card-container{
+    flex-direction: column;
+    width: 100%;
+    height: 125rem;
+    overflow: hidden;
+  }
+
+  .member-card{
+    width: 100%;
+    filter: brightness(1);
+  }
+
+  .aboutus-img{
+    width: 100%;
+  }
+
+  .social-media-icons{
+    right:1rem;
+  }
+}
+@media (max-width:768px){
+  #company-info{
+    flex-direction: column;
+  }
+
+  #company-info img{
+    width: 90%;
+  }
+}

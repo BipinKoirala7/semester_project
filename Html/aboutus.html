@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/aboutus.css" />
+    <title>About Us</title>
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <main>
+      <div id="container" class="flex-column">
+        <div id="store-info" class="about-us flex-center flex-column">
+          <p id="" class="big-title">Our Store</p>
+          <div id="company-info">
+            <img
+              class="aboutus-img"
+              src="../assets/photos/samayeko-sansar-high-resolution-logo-transparent.png"
+              alt=""
+            />
+            <p class="description">
+              "Welcome to our store, where quality meets passion! We take pride
+              in offering a carefully curated selection of products designed to
+              enrich your everyday life. Whether you're looking for timeless
+              classics or modern innovations, our collection is crafted to meet
+              diverse tastes and needs. At the heart of our mission is a
+              commitment to exceptional customer service, ensuring your
+              experience is seamless and satisfying. Explore our store and
+              discover why we’re more than just a shopping destination—we’re a
+              community dedicated to bringing value and joy to every purchase."
+            </p>
+          </div>
+        </div>
+        <div id="member-wrapper" class="flex-column">
+          <div id="our-team-info" class="about-us flex-center flex-column">
+            <p id="" class="big-title">Our Team</p>
+            <div id="team-info" class="flex-center">
+              <img
+                id="together-img"
+                src="../assets/photos/wmremove-transformed.png"
+                alt=""
+                class="aboutus-img"
+              />
+              <p class="description">
+                "We’re a passionate team of developers, designers, and dreamers
+                dedicated to turning ideas into reality through innovative,
+                user-friendly digital experiences."
+              </p>
+            </div>
+          </div>
+          <div class="member-info flex-column" id="member-container">
+            <p class="big-title" style="text-align: center">Our Members</p>
+            <div id="member-card-container"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer"></footer>
+
+    <!-- modal containers -->
+
+    <!-- search box -->
+    <div id="search-box-container" class="flex-center"></div>
+    <!-- cart box -->
+    <dialog id="cart-box-wrapper"></dialog>
+    <!-- user signin or info box -->
+    <dialog id="user-info"></dialog>
+    <!-- navigaition dialog box in small screen -->
+     <dialog id="navigation-options"></dialog>
+    <script src="../Js/aboutus.js"></script>
+    <script src="../Js/main.js" type="module"></script>
+  </body>
+</html>

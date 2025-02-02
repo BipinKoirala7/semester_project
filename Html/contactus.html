@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/contactus.css" />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <main>
+      <div id="wrapper" class="flex-column flex-center">
+        <div id="contact-heading" class="flex-center flex-column">
+          <p class="big-title header-font-family">Get in Touch</p>
+          <p class="description">
+            Contact us using the information below. We'll respond promptly to
+            your inquired and feedback.
+          </p>
+        </div>
+        <div id="contact-us-form">
+          <div id="form-info" class="flex-column">
+            <p class="title">Our Contact Form to Connect With Our Team.</p>
+            <p class="dark-description">
+              Welcome to our Contact Us page! We value your feedback, inquiries,
+              and suggestions. Our contact form is designed to make it easy for
+              you to reach out to us. Whether you have a question about our
+              services, need assistance, or would like to share your thoughts,
+              we’re here to help.
+            </p>
+          </div>
+          <form onsubmit="AlertMessage()" id="contact-form" class="flex-column">
+            <p class="title header-font-family">Send your message now!</p>
+            <div id="form-container" class="flex-column">
+              <div id="name-container">
+                <div class="input-container flex-column">
+                  <label for="first-name" class="label">First Name</label>
+                  <input
+                    type="text"
+                    name=""
+                    class="input"
+                    placeholder="First Name"
+                    id="first-name"
+                     min="0"
+                    required
+                  />
+                </div>
+                <div class="input-container flex-column">
+                  <label class="label" for="last-name">Last Name</label>
+                  <input
+                    class="input"
+                    type="text"
+                    name=""
+                    placeholder="Last Name"
+                    id="last-name"
+                    min="0"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="input-container flex-column">
+                <label class="label" for="email">Email</label>
+                <input
+                  class="input"
+                  type="email"
+                  name=""
+                  id="contact-email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="input-container flex-column">
+                <label class="label" for="phone">Phone</label>
+                <input
+                  class="input"
+                  type="number"
+                  name=""
+                  id="phone"
+                  placeholder="XXXX-XXX-XXX"
+                  required
+                />
+              </div>
+              <div class="input-container flex-column">
+                <label class="label" for="message">Message</label>
+                <textarea
+                  class="input"
+                  type="text"
+                  name=""
+                  id="message"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="button" style="width: fit-content;" >Send</button>
+            </div>
+          </form>
+        </div>
+        <div id="newsletter-connect-wrapper">
+          <div id="newsletter-container" class="flex-column">
+            <p class="title">Subscribe to Our Newsletter</p>
+            <form action="" id="newsletter-form" class="flex-column">
+              <div class="flex-column input-container">
+                <label for="newletter-name" class="label">Name</label>
+                <input
+                  type="text"
+                  class="input"
+                  id="newletter-name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="flex-column input-container">
+                <label for="newsletter-email" class="label">Email</label>
+                <input
+                  type="email"
+                  class="input"
+                  id="newsletter-email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <button type="submit" style="width: fit-content;" class="button" id="join-now-btn" onclick="AlertMessage()">Join Now!</button>
+            </form>
+          </div>
+          <div id="newsletter-info" class="flex-column">
+            <p class="title header-font-family">Stay Connected with Us</p>
+            <p class="dark-description">
+              Get the latest products, offers and information about wrists
+              watches and many more through our newsletter.Join us!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer"></footer>
+
+    <!-- modal containers -->
+
+    <!-- search box -->
+    <div id="search-box-container" class="flex-center"></div>
+    <!-- cart box -->
+    <dialog id="cart-box-wrapper"></dialog>
+    <!-- user signin or info box -->
+    <dialog id="user-info"></dialog>
+    <!-- navigaition dialog box in small screen -->
+     <dialog id="navigation-options"></dialog>
+
+    <script src="../Js/main.js" type="module"></script>
+  </body>
+</html>

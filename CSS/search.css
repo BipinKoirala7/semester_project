@@ -1,0 +1,27 @@
+main{
+    padding: 1rem;
+}
+
+#search-container{
+    gap: 1rem;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#search-info{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    font-size: 1.25rem;
+}
+
+#search-query{
+    font-weight: bold;
+}
+
+#product-cart-container{
+    gap: .5rem;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/product.css" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Product</title>
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <main id="main-content" class="flex-column">
+      <div id="product-slider-showcase" class="flex-center">
+        <button type="button" class="button" id="slide-back" onclick="sliderMoveBack()">
+          <
+        </button>
+        <div id="product-slider-container"></div>
+        <button type="button" class="button" id="slide-forward" onclick="sliderMoveForward()">
+          >
+        </button>
+      </div>
+      <div id="new-product-main" class="flex-column">
+        <h1>New Product</h1>
+        <div class="product-card-container" id="new-product-container"></div>
+      </div>
+      <div id="popular-product-main" class="flex-column">
+        <h1>Popular Product</h1>
+        <div
+          class="product-card-container"
+          id="popular-product-container"
+        ></div>
+      </div>
+    </main>
+
+    <footer class="flex-column flex-center footer" id="footer"></footer>
+
+    <!-- modal containers -->
+
+    <!-- search box -->
+    <div id="search-box-container" class="flex-center"> </div>
+    <!-- cart box -->
+    <dialog id="cart-box-wrapper"></dialog>
+    <!-- user signin or info box -->
+    <dialog id="user-info"></dialog>
+    <!-- navigaition dialog box in small screen -->
+     <dialog id="navigation-options"></dialog>
+     <script src="../Js/main.js" type="module"></script>
+    <script src="../Js/product.js" type="module"></script>
+  </body>
+</html>

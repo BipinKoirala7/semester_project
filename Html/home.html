@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <title>Home</title>
+    <style>
+      body {
+        gap: 0;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      #main-video-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      #video {
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body class="flex-column">
+    <header id="header"></header>
+
+    <main>
+      <div id="main-video-container">
+        <video id="video" loop autoplay muted>
+          <source src="../assets/videos/mainvideo1.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div id="home-main-wrapper" class="flex-column">
+        <div id="proposition-wrapper" class="wrapper flex-column">
+          <p id="description">
+            Discover Our curated selection of high-quality watches, blending
+            craftsmanship with contenporary design
+          </p>
+          <div id="proposition-container">
+            <div class="proposition flex-column flex-center">
+              <img
+                src="../assets/photos/noun-quality-7297218.png"
+                alt=""
+                class="proposition-img"
+              />
+              <p class="proposition-argument">Best Quality</p>
+            </div>
+            <div class="proposition">
+              <img
+                src="../assets/photos/noun-safe-6995400.png"
+                alt=""
+                class="proposition-img"
+              />
+              <p class="proposition-argument">7-day Money Back Return</p>
+            </div>
+            <div class="proposition">
+              <img
+                src="../assets/photos/noun-trust-3918442.png"
+                alt=""
+                class="proposition-img"
+              />
+              <p class="proposition-argument">1 Year of Wrranty</p>
+            </div>
+          </div>
+        </div>
+        <div id="featured-product-wrapper" class="wrapper flex-column">
+          <div id="featured-info" class="flex-column">
+            <p class="title">Featured Products</p>
+            <p class="description">Elegance is a character for longiness.</p>
+          </div>
+          <div id="featured-product-container" class="product-card-container">
+            <!-- use js to put featured product -->
+          </div>
+        </div>
+        <div id="customer-review-wrapper" class="wrapper flex-column">
+          <div id="customer-review-info" class="flex-column">
+            <p class="title">Our Loyal Customers Review</p>
+            <p class="description">
+              See what our loyal and everyday customer say about us.
+            </p>
+          </div>
+          <!-- <div id="customer-review-main"> -->
+            <div id="customer-review-container">
+              <!-- use js to put review card -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer flex-column" id="footer"></footer>
+    <!-- modal containers -->
+
+    <!-- search box -->
+    <div id="search-box-container" class="flex-center"></div>
+    <!-- cart box -->
+    <dialog id="cart-box-wrapper"></dialog>
+    <!-- user signin or info box -->
+    <dialog id="user-info"></dialog>
+    <!-- navigaition dialog box in small screen -->
+     <dialog id="navigation-options"></dialog>
+
+    <script src="../Js/main.js" type="module"></script>
+    <script src="../Js/home.js" type="module"></script>
+  </body>
+</html>
