@@ -100,7 +100,7 @@
         <div id="newsletter-connect-wrapper">
           <div id="newsletter-container" class="flex-column">
             <p class="title">Subscribe to Our Newsletter</p>
-            <form action="" id="newsletter-form" class="flex-column">
+            <form onsubmit="AlertMessage()" id="newsletter-form" class="flex-column">
               <div class="flex-column input-container">
                 <label for="newletter-name" class="label">Name</label>
                 <input
@@ -121,7 +121,7 @@
                   required
                 />
               </div>
-              <button type="submit" style="width: fit-content;" class="button" id="join-now-btn" onclick="AlertMessage()">Join Now!</button>
+              <button type="submit" style="width: fit-content;" class="button" id="join-now-btn">Join Now!</button>
             </form>
           </div>
           <div id="newsletter-info" class="flex-column">
