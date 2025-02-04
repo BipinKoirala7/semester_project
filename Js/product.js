@@ -62,7 +62,7 @@ async function  putProductInSlider(product) {
   document.querySelectorAll(".product-slider-item #product-slider-info button").forEach((item) => {
     item.onclick = () => {
       setLocalStorage("selectedWatchId", item.parentElement.parentElement.parentElement.dataset.watchid);
-      window.location.href = "./Html/view.html";
+      window.location.href = "./view.html";
     };
   })
 }
