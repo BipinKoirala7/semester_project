@@ -122,7 +122,7 @@ async function main() {
   productCardInfo.forEach((card) => {
     card.onclick = () => {
       setLocalStorage("selectedWatchId", card.dataset.watchid);
-      window.location.href = "./Html/view.html";
+      window.location.href = "./view.html";
     };
   });
 }
